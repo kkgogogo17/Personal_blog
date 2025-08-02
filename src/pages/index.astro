@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Welcome to ideaoverflow.dev</h1>
+			<p>
+				This is my personal space on the web where I share thoughts, interesting articles I discover, 
+				and ideas that I believe are worth discussing. Think of it as my digital notebook where 
+				curiosity meets conversation.
+			</p>
+			<p>
+				Whether it's a fascinating piece of technology, an insightful perspective on life, 
+				or simply something that made me think differently, you'll find it here. 
+				I hope these shared ideas spark some interesting thoughts for you too.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
